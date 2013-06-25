@@ -1,0 +1,303 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\sa200\sl276\slmult1\lang9\f0\fs22 rich@RICH-PC ~/Desktop\par
+$ nano\par
+sh.exe": nano: command not found\par
+\par
+rich@RICH-PC ~/Desktop\par
+$ touch\par
+touch: file arguments missing\par
+Try `touch --help' for more information.\par
+\par
+rich@RICH-PC ~/Desktop\par
+$ nano help\par
+sh.exe": nano: command not found\par
+\par
+rich@RICH-PC ~/Desktop\par
+$ touch help\par
+\par
+rich@RICH-PC ~/Desktop\par
+$ touch --help\par
+Usage: touch [OPTION]... FILE...\par
+  or:  touch [-acm] MMDDhhmm[YY] FILE... (obsolescent)\par
+Update the access and modification times of each FILE to the current time.\par
+\par
+  -a                     change only the access time\par
+  -c, --no-create        do not create any files\par
+  -d, --date=STRING      parse STRING and use it instead of current time\par
+  -f                     (ignored)\par
+  -m                     change only the modification time\par
+  -r, --reference=FILE   use this file's times instead of current time\par
+  -t STAMP               use [[CC]YY]MMDDhhmm[.ss] instead of current time\par
+  --time=WORD            set time given by WORD: access atime use (same as -a)\par
+                           modify mtime (same as -m)\par
+      --help             display this help and exit\par
+      --version          output version information and exit\par
+\par
+Note that the three time-date formats recognized for the -d and -t options\par
+and for the obsolescent argument are all different.\par
+\par
+Report bugs to <bug-fileutils@gnu.org>.\par
+\par
+rich@RICH-PC ~/Desktop\par
+$ mkdir folder1\par
+\par
+rich@RICH-PC ~/Desktop\par
+$ ls -l\par
+total 109\par
+drwxr-xr-x    2 rich     Administ        0 Mar 29 20:01 folder1\par
+-rw-r--r--    1 rich     Administ        0 Mar 29 20:00 help\par
+-rw-r--r--    1 rich     Administ      170 Feb 21 16:50 hours.txt\par
+-rw-r--r--    1 rich     Administ     1129 Feb  2 09:36 railo - Shortcut.lnk\par
+drwxr-xr-x    2 rich     Administ     4096 Mar 23 16:10 schedules\par
+-rw-r--r--    1 rich     Administ      192 Mar 28 22:06 sfw1-attendance.txt\par
+-rw-r--r--    1 rich     Administ      130 Mar 26 23:22 sfw1-changes.txt\par
+-rw-r--r--    1 rich     Administ   212029 Mar 26 23:43 sunkey-apartment.jpg\par
+\par
+rich@RICH-PC ~/Desktop\par
+$ mv file1 folder1\par
+mv: cannot stat `file1': No such file or directory\par
+\par
+rich@RICH-PC ~/Desktop\par
+$ ls -l\par
+total 109\par
+drwxr-xr-x    2 rich     Administ        0 Mar 29 20:01 folder1\par
+-rw-r--r--    1 rich     Administ        0 Mar 29 20:00 help\par
+-rw-r--r--    1 rich     Administ      170 Feb 21 16:50 hours.txt\par
+-rw-r--r--    1 rich     Administ     1129 Feb  2 09:36 railo - Shortcut.lnk\par
+drwxr-xr-x    2 rich     Administ     4096 Mar 23 16:10 schedules\par
+-rw-r--r--    1 rich     Administ      192 Mar 28 22:06 sfw1-attendance.txt\par
+-rw-r--r--    1 rich     Administ      130 Mar 26 23:22 sfw1-changes.txt\par
+-rw-r--r--    1 rich     Administ   212029 Mar 26 23:43 sunkey-apartment.jpg\par
+\par
+rich@RICH-PC ~/Desktop\par
+$ ls folder1\par
+\par
+rich@RICH-PC ~/Desktop\par
+$ ls folder1\par
+\par
+rich@RICH-PC ~/Desktop\par
+$ mv file2 file6\par
+mv: cannot stat `file2': No such file or directory\par
+\par
+rich@RICH-PC ~/Desktop\par
+$ ls -l\par
+total 109\par
+drwxr-xr-x    2 rich     Administ        0 Mar 29 20:01 folder1\par
+-rw-r--r--    1 rich     Administ        0 Mar 29 20:00 help\par
+-rw-r--r--    1 rich     Administ      170 Feb 21 16:50 hours.txt\par
+-rw-r--r--    1 rich     Administ     1129 Feb  2 09:36 railo - Shortcut.lnk\par
+drwxr-xr-x    2 rich     Administ     4096 Mar 23 16:10 schedules\par
+-rw-r--r--    1 rich     Administ      192 Mar 28 22:06 sfw1-attendance.txt\par
+-rw-r--r--    1 rich     Administ      130 Mar 26 23:22 sfw1-changes.txt\par
+-rw-r--r--    1 rich     Administ   212029 Mar 26 23:43 sunkey-apartment.jpg\par
+\par
+rich@RICH-PC ~/Desktop\par
+$ mkdir folder2\par
+\par
+rich@RICH-PC ~/Desktop\par
+$ cd folder1\par
+\par
+rich@RICH-PC ~/Desktop/folder1\par
+$ mkdir folder2\par
+\par
+rich@RICH-PC ~/Desktop/folder1\par
+$ li -l\par
+sh.exe": li: command not found\par
+\par
+rich@RICH-PC ~/Desktop/folder1\par
+$ ls -l\par
+total 0\par
+drwxr-xr-x    2 rich     Administ        0 Mar 29 20:06 folder2\par
+\par
+rich@RICH-PC ~/Desktop/folder1\par
+$ cd ~\par
+\par
+rich@RICH-PC ~\par
+$ cd folder1\par
+sh.exe": cd: folder1: No such file or directory\par
+\par
+rich@RICH-PC ~\par
+$ pwd\par
+/c/Users/rich\par
+\par
+rich@RICH-PC ~\par
+$ cd Desktop\par
+\par
+rich@RICH-PC ~/Desktop\par
+$ cd folder1\par
+\par
+rich@RICH-PC ~/Desktop/folder1\par
+$ ls -l\par
+total 0\par
+drwxr-xr-x    2 rich     Administ        0 Mar 29 20:06 folder2\par
+\par
+rich@RICH-PC ~/Desktop/folder1\par
+$ ls\par
+folder2\par
+\par
+rich@RICH-PC ~/Desktop/folder1\par
+$ ..\par
+sh.exe": ..: command not found\par
+\par
+rich@RICH-PC ~/Desktop/folder1\par
+$ cd ..\par
+\par
+rich@RICH-PC ~/Desktop\par
+$ mkdir folder3\par
+\par
+rich@RICH-PC ~/Desktop\par
+$ mv folder3 folder1/folder2\par
+\par
+rich@RICH-PC ~/Desktop\par
+$ cd folder1/folder2\par
+\par
+rich@RICH-PC ~/Desktop/folder1/folder2\par
+$ ls\par
+folder3\par
+\par
+rich@RICH-PC ~/Desktop/folder1/folder2\par
+$ cd ..\par
+\par
+rich@RICH-PC ~/Desktop/folder1\par
+$ cd ..\par
+\par
+rich@RICH-PC ~/Desktop\par
+$ pwd\par
+/c/Users/rich/Desktop\par
+\par
+rich@RICH-PC ~/Desktop\par
+$ cd folder1\par
+\par
+rich@RICH-PC ~/Desktop/folder1\par
+$ rm folder3\par
+rm: cannot remove `folder3': No such file or directory\par
+\par
+rich@RICH-PC ~/Desktop/folder1\par
+$ cd folder2\par
+\par
+rich@RICH-PC ~/Desktop/folder1/folder2\par
+$ rm folder3\par
+rm: `folder3' is a directory\par
+\par
+rich@RICH-PC ~/Desktop/folder1/folder2\par
+$ rm help\par
+rm: cannot remove `help': No such file or directory\par
+\par
+rich@RICH-PC ~/Desktop/folder1/folder2\par
+$ rm --help\par
+Usage: rm [OPTION]... FILE...\par
+Remove (unlink) the FILE(s).\par
+\par
+  -d, --directory       unlink directory, even if non-empty (super-user only)\par
+  -f, --force           ignore nonexistent files, never prompt\par
+  -i, --interactive     prompt before any removal\par
+  -r, -R, --recursive   remove the contents of directories recursively\par
+  -v, --verbose         explain what is being done\par
+      --help            display this help and exit\par
+      --version         output version information and exit\par
+\par
+To remove a file whose name starts with a `-', for example `-foo',\par
+use one of these commands:\par
+  rm -- -foo\par
+\par
+  rm ./-foo\par
+\par
+Note that if you use rm to remove a file, it is usually possible to recover\par
+the contents of that file.  If you want more assurance that the contents are\par
+truly unrecoverable, consider using shred.\par
+\par
+Report bugs to <bug-fileutils@gnu.org>.\par
+\par
+rich@RICH-PC ~/Desktop/folder1/folder2\par
+$ rm -R folder3\par
+\par
+rich@RICH-PC ~/Desktop/folder1/folder2\par
+$ ls\par
+\par
+rich@RICH-PC ~/Desktop/folder1/folder2\par
+$ cd ..\par
+\par
+rich@RICH-PC ~/Desktop/folder1\par
+$ ls\par
+folder2\par
+\par
+rich@RICH-PC ~/Desktop/folder1\par
+$ cp folder1\par
+cp: missing destination file\par
+Try `cp --help' for more information.\par
+\par
+rich@RICH-PC ~/Desktop/folder1\par
+$ cp folder2 folder1\par
+cp: omitting directory `folder2'\par
+\par
+rich@RICH-PC ~/Desktop/folder1\par
+$ ls\par
+folder2\par
+\par
+rich@RICH-PC ~/Desktop/folder1\par
+$ cp -R folder2 folder2copy\par
+\par
+rich@RICH-PC ~/Desktop/folder1\par
+$ ls\par
+folder2  folder2copy\par
+\par
+rich@RICH-PC ~/Desktop/folder1\par
+$ cd ..\par
+\par
+rich@RICH-PC ~/Desktop\par
+$ ping google.com\par
+\par
+Pinging google.com [74.125.229.230] with 32 bytes of data:\par
+Reply from 74.125.229.230: bytes=32 time=18ms TTL=57\par
+Reply from 74.125.229.230: bytes=32 time=18ms TTL=57\par
+Reply from 74.125.229.230: bytes=32 time=18ms TTL=57\par
+Reply from 74.125.229.230: bytes=32 time=20ms TTL=57\par
+\par
+Ping statistics for 74.125.229.230:\par
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\par
+Approximate round trip times in milli-seconds:\par
+    Minimum = 18ms, Maximum = 20ms, Average = 18ms\par
+\par
+rich@RICH-PC ~/Desktop\par
+$\par
+\par
+rich@RICH-PC ~/Desktop\par
+$ ping worldofwarcraft.com\par
+\par
+Pinging worldofwarcraft.com [12.129.242.22] with 32 bytes of data:\par
+Request timed out.\par
+Reply from 12.129.244.186: Destination net unreachable.\par
+\par
+Ping statistics for 12.129.242.22:\par
+    Packets: Sent = 2, Received = 1, Lost = 1 (50% loss),\par
+Control-C\par
+\par
+\par
+rich@RICH-PC ~/Desktop\par
+$  mkdir folder1a\par
+\par
+rich@RICH-PC ~/Desktop\par
+$ mv folder1 "folder 1"\par
+\par
+rich@RICH-PC ~/Desktop\par
+$ mv folder 1 "folder1"\par
+mv: when moving multiple files, last argument must be a directory\par
+Try `mv --help' for more information.\par
+\par
+rich@RICH-PC ~/Desktop\par
+$ mv folder 1 "folder1"\par
+mv: when moving multiple files, last argument must be a directory\par
+Try `mv --help' for more information.\par
+\par
+rich@RICH-PC ~/Desktop\par
+$ ls\par
+folder1   help       railo - Shortcut.lnk  sfw1-attendance.txt  sunkey-apartment.jpg\par
+folder1a  hours.txt  schedules             sfw1-changes.txt\par
+\par
+rich@RICH-PC ~/Desktop\par
+$ mv folder1 folder1a\par
+\par
+rich@RICH-PC ~/Desktop\par
+$\par
+}
+ 

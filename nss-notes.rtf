@@ -1,0 +1,423 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\sa200\sl276\slmult1\lang9\f0\fs22 * \b NSS\b0\par
+\par
+* \b PuTTy\b0 :\par
+- \b login\b0 :\par
+\tab - \b username\b0 : rhutchinson\par
+\tab - \b pw\b0 : nss1204*hutch#1\par
+\tab - \b note\b0 : use SFTP in FileZilla to connect\par
+\tab - \b IP\b0 : most of the time it will be 66.192.104.111\par
+\par
+* \b creating files in Linux from a Bash Shell Prompt\b0 :\par
+\tab - \b creating .txt files\b0 :\par
+\tab\tab - $ cat > filejaiName.txt\par
+\tab\tab\tab - ctrl + d to save the file\par
+\tab - \b displaying content\b0 :\par
+\tab\tab - $ cat fileName.txt\par
+\tab - \b copying content into another file or folder\b0 :\par
+\tab\tab - ls folder > file.txt\par
+\tab\tab\b - or -\b0\par
+\tab\tab - ls -l folder > file.txt\par
+\tab\tab\b - or -\b0\par
+\tab\tab - ls -lR folder > file.txt\par
+\tab - \b editing and saving the content\b0 :\par
+\tab\tab - called VIM\par
+\tab\tab - \b editing\b0 : type vi fileName.txt\par
+\tab\tab\tab - then push i to go into the insert mode\par
+\tab\tab - \b exit without saving\b0 : use :x\par
+\tab\tab - \b save\b0 : push escape to switch to command mode then type \b :wq\b0  and push enter, to go back to inset mode push escape again and push \b i\b0\par
+\par
+* use putty for most linux / unix servers if on windows, though other Terminal Server programs are Citrix or PcAnywhere\par
+- PuTTy\par
+- Citrix\par
+- PcAnywhere\par
+--\par
+- \b git hub - git shell\b0 :\par
+\tab - \b To delete the file, we type\b0 :\par
+\tab -  git rm INSTALL - (install is a folder - git rm will remove it locally, though rm folderName will work too)\par
+\tab - \b And then we need to commit the changes\b0 :\par
+\tab\tab - git commit -m 'Removed INSTALL file, due to content having been appended to the README file'\par
+\tab - \b Finally, push it to Github\b0 :\par
+\tab\tab -  git push origin master\par
+--\par
+- \b cd into program files\b0 :\par
+\tab - cd C:\\\par
+\tab - cd "Program Files"\par
+--\par
+- \b dropbox\b0 :\par
+\tab - IP: dropitto.me/jrobertknight\par
+\tab - u: jrobertknight - note: may not need\par
+\tab - pw: ?KNSS1\par
+\par
+- search and destroy - book about google\par
+----\par
+- \b Day 1\b0 :\par
+- \b Xerox\b0 :  created the first WIMP (Window, Icon, Menu, and Pointing device) system\par
+- \b api\b0 : application programming interface\par
+--\par
+- \b Unix\b0 : command line interface\par
+\tab - rewritted in C - not assembly language\par
+\tab - AT&T created Unix\par
+\tab - all command line\par
+\par
+- \b Linux\b0 : Ubuntu, RedHat, etc...\par
+\tab - open source\par
+\tab - user interfaces\par
+\tab\tab - Gnome\par
+\tab\tab - KDE\par
+\tab - android uses linux\par
+\tab - the linux mascot is named tuxs\par
+\tab\tab - story is the creater was bit by a panguin\par
+\par
+- \b DOS\b0 : used in old IBM (PC) computers\par
+\tab - definition: disk operating system\par
+\tab - windows was just a shell that was put on top of DOS\par
+\tab\tab - windows 95 stopped using DOS\par
+----\par
+- \b motherboard\b0 : nick name "mobo"\par
+----\par
+- \b Day 2\b0 :\par
+The first is the assignment itself.  The second is the video demonstration.  \par
+\par
+{\field{\*\fldinst{HYPERLINK "http://media.online.fullsail.edu/FULLSAIL/faculty/2011/05/Intro%20to%20Terminald410e957-a481-4950-b9de-f0b1c23fdf8d.pdf"}}{\fldrslt{\ul\cf1 http://media.online.fullsail.edu/FULLSAIL/faculty/2011/05/Intro%20to%20Terminald410e957-a481-4950-b9de-f0b1c23fdf8d.pdf}}}\f0\fs22\par
+\par
+{\field{\*\fldinst{HYPERLINK "http://media.online.fullsail.edu/FULLSAIL/faculty/2011/03/videoinstructions_Terminal_Activity01260076-de7a-4fb3-99af-edd115294465.mov"}}{\fldrslt{\ul\cf1 http://media.online.fullsail.edu/FULLSAIL/faculty/2011/03/videoinstructions_Terminal_Activity01260076-de7a-4fb3-99af-edd115294465.mov}}}\f0\fs22\par
+\par
+I've created an account for you on our server.  Your username is rhutchinson and your password is nss1204*hutch#1.  You can log in using Putty and work through the assignment on the server whenever you get a chance.  The server address is 66.192.104.111 or just wddbs.com.\par
+\par
+- \b binary system\b0 :\par
+\tab - increases by a power of 2\par
+\tab\tab - multiply by 2\par
+\tab\tab - example in day two slides near the topdo\par
+\par
+\tab - start from the right side and go left\par
+\par
+  0       0     0     0    0   0   0   0\par
+128   64   32   16   8   4   2   1\par
+\par
+- thus if there is a number given 1001001 take the numbers above and line them up with these, the numbers that have a 1 will equal the value below (128, 64, 32, etc...)\par
+\tab - the result would be 128 + 8 + 1 = 137\par
+\par
+- taking a number and converting it into binary\par
+\tab - take the number ex: 1 and do a check to see what number of the eight binary placement numbers go into one.\par
+\tab - \b ex\b0 : using 1\par
+128 goes into 1 = 0\par
+64 goes into 1 = 0\par
+32 goes into 1 = 0\par
+16 goes into 1 = 0\par
+8 goes into 1 = 0\par
+4 goes into 1 = 0\par
+2 goes into 1 = 0\par
+1 goes into 1 = 1\par
+result = 0       0     0     0    0   0   0   1\par
+              128   64   32   16   8   4   2   1\par
+- this totals 1 due to the only binary placement value with a 1 is 1 itself\par
+\par
+--\par
+\par
+- 8 of the binary values = 1 byte thus 1 of the binary values is 1 bit\par
+\tab - this is the si notation\par
+\tab - the bi system is the 1024 values\par
+\par
+terabyte - smallest of these 5\par
+petabyte\par
+exabyte\par
+zettabyte\par
+yottabyte - biggest\par
+\par
+--\par
+- \b hexadecimal\b0 :\par
+- base 16 system\par
+- for the numbers leading up to 16 use the following\par
+\tab - A = 10, B = 11, C = 12, D = 13, E = 14, F = 15\par
+- increase by powers of 16\par
+  1           1       A     B\par
+4096    256    16    1\par
+\par
+4096 + 256 + 16 + 11\par
+total: 11AB = 4523\par
+--\par
+* \b file systems\b0 :\par
+- use FAT 32 for file storing - very compatible\par
+- NTFS is for big storage though is not compatible - is on most new microsoft computers\par
+\par
+- one dot means current directory: .\par
+- two dots means parent directory: ..\par
+\tab - \b ex\b0 : cd ..  - will move the user up one directory\par
+--\par
+- \b pwd \b0 - print working directory - where I currently am in the files\par
+- \b ls \b0 - list\par
+- \b cd \b0 - change directory\par
+- \b cp \b0 - copy\par
+\tab - to copy a folder: \b cp -R folder2 folder2copy\b0\par
+\tab\tab - then when typing ls, the result will be folder2 folder2copy\par
+- \b mkdir \b0 - make directory - can use \b nano\b0  - \b windows\b0  equivilant is \b puTTy\b0  to make a file\par
+- \b rm \b0 - remove / delete\par
+\tab - removing folders: \b rm -R folder3\par
+\b0 - \b mv \b0 - move / rename\par
+\tab - to add a space in a file name use double quotes - vise versa for removing a file with a space in it to a underscore or without a space\par
+- \b man \b0 - manual - type \b q\b0  to exit the manual\par
+\par
+- \b ctrl c\b0  - will stop a process much like ping\par
+--\par
+* \b options\b0 : change the way commands are exicuted:\par
+- \b ls -l \b0 - lists contents of the directory in long format\par
+- \b ls -a \b0 - includes hidden system fimes\par
+- \b ls -R \b0 - recursive list. lists everything (including subdirectories) - try not to do this command in the root due to opening to many files\par
+- \b ls -lR\b0  - long recursive list\par
+\par
+- \b ping \b0 - tests that a connection can be established between two nodes on a network\par
+\tab - to stop a ping press ctrl + c\par
+\par
+- \b touch \b0 - allows admin's to make dummy files\par
+\par
+- \b cd ~ \b0 - will take one to the desktop (read as cd tilda)\par
+--\par
+* \b permissions\b0 :\par
+\tab - end of the slides\par
+- chmod[permission][filename]\par
+- chown (look up - something about changing ownership of the file)\par
+\par
+----\par
+- \b Day 3\b0 :\par
+\tab - networking\par
+\par
+- \b LAN\b0 : local area network\par
+----\par
+\par
+- \b Day 4\b0 :\par
+\par
+- \b helper\b0 : {\field{\*\fldinst{HYPERLINK "http://en.wikipedia.org/wiki/IP_address#Public_addresses"}}{\fldrslt{\ul\cf1 http://en.wikipedia.org/wiki/IP_address#Public_addresses}}}\f0\fs22\par
+- \b ifconfig\b0 : will show all the network information on my computer\par
+\par
+Class A\par
+\par
+10.0.0.0 through 10.255.255.255\par
+\par
+Class B\par
+\par
+172.16.0.0 through 172.31.255.255\par
+\par
+Class C\par
+\par
+192.168.0.0 through 192.168.255.255\par
+\par
+* \b networks\b0 :\par
+- class A:\par
+\tab - 00000001 - binary\par
+- class B:\par
+\tab - 10000000 - binary\par
+- class C:\par
+\tab - 11000000 - binary\par
+- class D:\par
+\tab - 11100000 - binary\par
+\par
+--\par
+\par
+* \b compression\b0 :\par
+- \b Archive\b0 :\par
+\tab - puts the files in a folder, nothing else\par
+\tab - tar: used in unix\par
+\tab - preserves file system information (ownership, file permissions, etc...)\par
+\tab - will have a .tar extention\par
+\tab - wont compress all the way, will need to use a compressor, gzip - will have a .gz extention; another is Bzip2, slower than gzip, will have a .bz2 extention\par
+\tab\tab - can compress all starting with tar (thus .tar), then in gzip (thus .tar.gz), then Bzip2 (thus .tar.gz.bz2)\par
+- \b Compressed\b0 :\par
+\tab - .zip\par
+\tab - RAR\par
+\tab\tab - handles split valumes - used for backups - extention .rar\par
+\tab\tab - choose a bunch of files, then run them through RAR, result will be .rar, .r00, .r01, etc...\par
+\tab\tab - DMG - disk image - .dmg extention\par
+- \b Combined\b0 :\par
+\par
+--\par
+\par
+- \b Step One\b0  (Translate host IP address and network mask into binary notation):\par
+\tab - \b ex\b0 : 128.64.1.3\par
+\tab 10000000.01000000.00000001.00000011 - \b note\b0 : this is the IP Address\par
+\tab 11111111.11111111.00000000.00000000 - \b note\b0 : this is the Network Mask (255.255.0.0)\par
+\tab        255              255              0                 0\par
+\par
+- \b Step two\b0 : \par
+\tab 10000000.01000000.00000001.00000011 - \b note\b0 : this is the IP Address\par
+\tab 11111111.11111111.00000000.00000000 - \b note\b0 : this is the Network Mask (255.255.0.0)\par
+\tab -------------------------------------------------\par
+\tab 10000000.01000000.00000000.00000000 - \b note\b0 : this is the Network Address (128.64.0.0)\par
+\tab |----------------------||---------------------|\par
+\tab\tab |\tab\tab              |\par
+                        network                                 host\par
+\tab - \b result\b0 : 128.64.0.0\par
+\tab\tab - 2 to the 16th power = 65,536\par
+\tab\tab\tab - 2 times itself 16 times\par
+\tab\tab\tab - rob mentioned start at two or something look at answer sheet and compare if he supplys the answer sheet. \b ex\b0 : 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32\par
+\tab\tab\tab\tab - start with 2\par
+\tab\tab - \b next\b0 : subtract 2 (it's always 2)\par
+\tab\tab\tab - 65,536 - 2 = 65,534 usable hosts\par
+\tab - first part is the network, and the last is the determining part of the number to multiply by (aka 2 * 16 - the last two host areas are 0 thus 16th and the 8th place)\par
+32, 24, 16, 8\par
+- key word sub netting - youtube - this may help\par
+--\par
+- \b sider notation\b0 : aka CIDR\par
+\tab - this is the /16 in the network mask\par
+\tab\tab -  the way this works:\par
+\tab\tab\tab - ex: 255.255.0.0\par
+\tab\tab\tab\tab - 11111111.11111111.00000000.00000000 (\b note\b0 : this is 32)\par
+\tab\tab\tab\tab           32             24                   16              8\par
+\tab\tab\tab\tab - the network mask is 255.255.0.0 due to the last two sets of 0's aka the "host" is in the 16, and 8 location for binary (\b note\b0 : binary position values 32, 24, 16, 8)\par
+\par
+--\par
+- \b last part of .doc answers\b0 :\par
+\par
+- computer 1: wrong\par
+\tab - answer is C\par
+- can never asign a network address to a ip address\par
+\par
+- computer 2: \par
+\tab - answer E\par
+\par
+- computer 3:\par
+\tab - answer F\par
+\par
+- computer 4: duplicate address - wrong\par
+\tab - answer B\par
+\par
+- computer 5: broadcast gateway - wrong\par
+\tab - answer A\par
+\par
+- computer 6:\par
+\tab - answer D\par
+\par
+----\par
+\par
+- \b Day 5\b0 :\par
+\par
+- \b subnetting\b0 :\par
+\tab - breaking up the network into smaller pieces\par
+\tab - \b note\b0 : the last "one's" ex: 1 in the subnet mask are the subnet and the rest of the "zero's" ex: 0 to the left are the host\par
+\par
+- 128 to 2 - when steeling\par
+- 128 to 1 - when counting\par
+\par
+- all ones in a broadcast\par
+- cider notation are how many ones there are. \b ex\b0 : /16\par
+\par
+10.0.0.0\par
+subnet ID (network address)\par
+\par
+----\par
+\par
+- \b Day 6\b0 :\par
+\par
+- data elements:\par
+\tab - data\par
+\tab - segment\par
+\tab - packet\par
+\tab - frame\par
+\tab - bits\par
+\par
+- media hubs are layer one\par
+- switch is a layer 2 due to dealing with the mac address\par
+- router is a layer 3 due to dealing with the IP\par
+\par
+- uri: uniform resource identifier - id\par
+- url: uniform resource locator - website address\par
+- urn: uniform resource name - isbn number for a book\par
+\par
+- tcp/id: from the top layer down\par
+\tab - app\par
+\tab - transport\par
+\tab - network\par
+\tab - DL\par
+\tab - Phys\par
+--\par
+- DNS\par
+\tab - domain name system\par
+\tab - returns the correct IP address when requested\par
+\par
+----\par
+\par
+- \b Day 7\b0 :\par
+\par
+- \b SSH\b0 :\par
+\tab - \b checking for existing ssh key\b0 :\par
+\tab\tab - cd ~/.ssh\par
+\tab\tab - \b note\b0 : the .ssh file is also in the rich > .ssh folder\par
+\tab\tab - \b note\b0 : the ssh key is inside the id_rsa.pub file. one can open the file with a text editor.\par
+\par
+\tab - \b ssh into alfalfa\b0 :\par
+\tab\tab - typing ssh and then enter will also work\par
+\tab\tab\tab - then ssh rhutchinson@wddbs.com\par
+\tab\tab\tab\tab - may need to type yes\par
+\tab\tab\tab - exit will exit the connection\par
+\par
+- \b sftp\b0 :\par
+\tab - known as ssh ftp or secure ftp though it's not ftp over ssh rather an entirely separate protocol\par
+\tab - works on port 21\par
+\par
+- \b Linux server\b0 : all command line, can be used for server management\par
+- \b open vpn\b0 : free software that will allow one to set up a secure network, this will allow me to access my server at home securly\par
+--\par
+* \b Private IP address ranges\b0 :\line\par
+- \b The ranges and the amount of usable IP's are as follows\b0 :\par
+\tab - link: {\field{\*\fldinst{HYPERLINK "http://whatismyipaddress.com/private-ip"}}{\fldrslt{\ul\cf1 http://whatismyipaddress.com/private-ip}}}\f0\fs22\par
+10.0.0.0 - 10.255.255.255\par
+Addresses: 16,777,216\line\par
+172.16.0.0 - 172.31.255.255\par
+Addresses: 1,048,576\line\par
+192.168.0.0 - 192.168.255.255\par
+Addresses: 65,536\par
+\par
+- \b lab 7\b0 :\par
+\tab - diagram programs to use:\par
+\tab - \b omnigraffle\b0 : {\field{\*\fldinst{HYPERLINK "http://www.omnigroup.com/products/omnigraffle/"}}{\fldrslt{\ul\cf1 http://www.omnigroup.com/products/omnigraffle/}}}\f0\fs22\par
+\tab - \b gliffy\b0 : {\field{\*\fldinst{HYPERLINK "http://www.gliffy.com/"}}{\fldrslt{\ul\cf1 http://www.gliffy.com/}}}\f0\fs22\par
+\par
+\tab - rob is looking for the students to be able to draw the diagram, though list what the IP address would look like and how high it would go. example: the blue area 192.168.1.3 - 52 this IP's last digit would go up until the 3 is a 52 then stop (the user's IP is a 3 due to the switch being an IP which makes the last digit a 2, and the main router has the IP with the last digit as a 1)\par
+\par
+----\par
+\par
+- \b Day 8\b0 :\par
+\par
+- ghost in the wires - hacker that wrote a book - hacker that was trying things out, not nessicarraly trying to cause harm\par
+- back track 5 (book about hacking) - linux penitration testing guide\par
+\par
+- \b sql injection\b0 : use a letter (ex: x) then a ' the argument OR 1=1 etc...\par
+\par
+- \b lab 8\b0 :\par
+\tab - download virtual box\par
+\tab\tab - \b note\b0 : the IP past into the url, this is where the school internet will mess up - students can continue past this part\par
+\par
+- \b logging in\b0 :\par
+- \b hostName\b0 : richard\par
+\tab - \b first password\b0  is the password for new user: pAsSwOrD (note: zero not an o, "r","D")\par
+\par
+- \b then type\b0 : su\par
+\tab - \b second password\b0  is root password: P@55w0rD (note: o not zero "r","D")\par
+\par
+- domain: fullsail.com\par
+\par
+- \b note\b0 :\par
+\tab - allow-hotplug eth1 - this is for my conputer\par
+\tab - iface eth1 inet dhcp - this is for the server\par
+\par
+\tab - eth0 - is the server\par
+\par
+----\par
+\par
+- \b Day 9\b0 :\par
+\tab - \b algorithem\b0 : set of instructions\par
+\par
+\tab - \b encryption\b0 :\par
+\tab\tab - 2 keys, first person has a public key. that key can encrypt the private key and the private key can encript the public key. the public key can not encript the encrypted private key.\par
+\par
+\tab - \b salt\b0  takes the password and then adds the salt to it, then the \b hash\b0  hashes the result\par
+\par
+\tab - \b creating public key\b0 :\par
+\tab\tab - day 9 lecture slides\par
+\par
+- \b Lab 9\b0 :\par
+\tab - skip anything that says lab - need a pc to use those\par
+\tab - use arrows to navigate\par
+}
+ 

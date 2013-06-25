@@ -1,0 +1,4 @@
+* NSS
+- phase one: make twitter aip call for assignment
+
+- phase two: make dynamic scheduled call of assignments when said time of class (lab) is corresponding to the day

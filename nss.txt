@@ -1,0 +1,5 @@
+putty - only does the connection
+sigwin - overlays unix commands to dos - may need this at some point
+
+localhost
+127.0.0.1 port 80
